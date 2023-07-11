@@ -1,0 +1,7 @@
+Objetivo:
+
+Aplicar los conceptos desarrollados en el semestre aplicados a gestión de memoria combinada
+
+Actividad:
+
+Usando JS en el navegador, desarrollar un aplicativo que muestre como se gestiona un sistema de 16 MiB de RAM (24 bits) usando el modelo de gestión de memoria combinada SEGMENTACIÓN PAGINADA, donde los primeros 12 bits de la dirección virtual corresponden al número de segmento y los restantes para el desplazamiento.

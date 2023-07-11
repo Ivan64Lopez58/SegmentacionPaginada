@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es"> 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="style.css" rel="stylesheet">
+    <script src="app.js" defer></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <title>Proyecto S.O</title>
+</head>
+<body>
+    <section class="container"> 
+        <div class="input"><!--Form procesos-->
+            <form>
+                <h1>Procesos</h1>
+                <label>nombre</label><br>
+                <input type="text" id="nombre"><br>
+                <label>.text:</label><br>
+                <input type="text" id="text"><br>
+                <label>.data:</label><br>
+                <input type="text" id="dat"><br>
+                <label>.bss:</label><br>
+                <input type="text" id="bss"><br>   
+                <button type="button" class="btn-agregar" id="agregar" onclick="paintSegments()">Agregar</button>
+            </form>
+            
+        </div>
+        <div id="proceso" class="pr"><!--Tabla procesos-->
+            <table id="lista"><caption>Procesos agregados</caption>
+                <tr>
+                    <td>ID Proceso</td>
+                    <td>.text</td>
+                    <td>.data</td>
+                    <td>.bss</td>
+                    <td>.stack</td>
+                    <td>.heap</td>
+                </tr>
+            </table>
+        </div>
+
+    </div>
+    <div id="proceso" class="pr"><!--Tabla procesos-->
+        <table id="listaDos"><caption>Cantidad de páginas necesarias</caption>
+            <tr>
+                <td>ID Proceso</td>
+                <td>.text</td>
+                <td>.data</td>
+                <td>.bss</td>
+                <td>.stack</td>
+                <td>.heap</td>
+            </tr>
+        </table>
+    </div>
+
+        <div class="inf"> <!--Direccion logica-->
+            <h1>La dirección lógica (24 bits) se conformará así:</h1><br>
+            <table>
+                <tr>
+                    <td>Bits</td>
+                </tr>
+                <tr>
+                    <td>12</td>
+                    <td>Segmentos por proceso</td>
+                    <td>4096</td>
+                </tr>
+                <tr>
+                    <td>12</td>
+                    <td>Tamaño max. segmento</td>
+                    <td>4096</td>
+                </tr>
+            </table>
+        </div>
+        <div>
+
+        </div>
+    </section>
+    
+    <h5 >Diagrama</h5>
+    <div id="rectangle" name="div"></div>
+
+    <table id="tablaDeSegmentos">
+        <thead><caption><br>Segmentos</caption>
+        <tr>
+            <th>Decimal</th>
+            <th>Hexadecimal</th>
+        </tr>          
+        </thead>
+        <tbody id="tablaBodySegmento"></tbody>
+    </table>
+
+    <table id="tablaDeMarcos">
+        <thead><caption>Marco de página</caption>
+        <tr>
+            <th>Decimal</th>
+            <th>Hexadecimal</th>
+        </tr>          
+        </thead>
+        <tbody id="tablaBodyDos"></tbody>
+    </table>
+
+    <table id="TablaDirecciones">
+        <thead><caption>Dirección de memoria</caption>
+        <tr>
+            <th>Decimal</th>
+            <th>Hexadecimal</th>
+        </tr>          
+        </thead>
+        <tbody id="tablaBody"></tbody>
+    </table>
+
+    <button id="botonVerificar">Mostrar direcciones</button>
+
+    <table id="nuevaTabla">
+        <thead><caption>Resumen direcciones</caption>
+        <tr>
+            <td>&nbsp;Numero segmento y Página&nbsp;</td>
+            <td>&nbsp;Base Segmento&nbsp;</td>
+            <td>&nbsp;Limite Segmento&nbsp;</td>
+            <td>&nbsp;Marco página&nbsp;</td>
+            <td>&nbsp;Direccion&nbsp;</td>
+            <td>&nbsp;Proceso&nbsp;</td>
+        </tr>          
+        </thead>
+        <tbody id="tablaNuevaBody"></tbody>
+    </table>
+    <div>
+    <select class="custom-combobox" id="comboBox" onchange="realizarAccion()">
+        <option value="">Seleccionar proceso</option>
+      </select>
+    </div>
+
+<!--   <div id="contenedor">
+        Aquí se agregará la nueva tabla generada 
+    </div>-->
+
+    <table id="tabla">
+        <!-- Filas y celdas se agregarán aquí -->
+      </table>
+    
+    
+    
+    
+</body>
+
+</html>

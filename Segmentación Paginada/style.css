@@ -1,0 +1,185 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    min-height: 50vh;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .container {
+    display: flex;
+  }
+  
+  form,
+  .pr,
+  .inf {
+    padding: 20px 55px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+    width: auto;
+    margin: 20px;
+    font-size: 15px;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+  }
+  
+  h5 {
+    position: absolute;
+    top: 470px;
+    left: 665px;
+    caption-side: top;
+    font-size: 18px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+  }
+  
+  .input {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+  }
+  
+  label {
+    font-size: 15px;
+    font-weight: 600;
+  }
+  
+  input,
+  textarea {
+    border-radius: 25px;
+    margin-bottom: 15px;
+    border: 2px solid #1e201f;
+  }
+  
+  .btn-agregar {
+    border-radius: 25px;
+    border: 0.5;
+    cursor: pointer;
+    margin-left: 33%;
+  }
+  
+  .btn-eliminar {
+    background-color: rgb(194, 80, 80);
+    color: white;
+    border-radius: 25px;
+    cursor: pointer;
+    text-decoration: none;
+  }
+  
+  #rectangle {
+    position: absolute;
+    top: 552px;
+    height: 20px;
+    background-color: transparent;
+    width: 205px;
+    left: 593px;
+  }
+  
+  #rectangle div {
+    width: 205px;
+    height: 300px;
+    margin-bottom: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 10px;
+  }
+  
+  #eraseButton {
+    margin: 20px;
+  }
+  
+  #tablaDeSegmentos,
+  #tablaDeMarcos,
+  #TablaDirecciones {
+    position: absolute;
+    top: 490px;
+    text-align: center;
+    justify-content: center;
+    font-size: 14px;
+    font-family: 'Courier New', Courier, monospace;
+    
+  }
+
+
+  #nuevaTabla {
+    position: absolute;
+    top: 490px;
+    text-align: center;
+    justify-content: center;
+    font-size: 12px;
+    font-family: 'Courier New', Courier, monospace;
+    border-collapse: separate;
+    border-spacing: 8px; /* Ajusta el valor según el espacio deseado entre las columnas */
+  
+    }
+
+    #nuevaTabla td {
+      border: 1px solid black; /* Agrega un borde a cada celda de la tabla */
+    }
+  
+  #tablaDeSegmentos {
+    left: 25px;
+
+  }
+  
+  #tablaDeMarcos {
+    left: 210px;
+  }
+  
+  #TablaDirecciones {
+    left: 395px;
+  }
+  #nuevaTabla {
+    left: 845px;
+  }
+
+  #tablaDeSegmentos caption,
+  #tablaDeMarcos caption,
+  #TablaDirecciones caption,
+  #listaDos caption,
+  #lista caption  {
+    caption-side: top;
+    font-size: 18px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    
+  }
+
+  #nuevaTabla caption {
+    caption-side: top;
+    font-size: 18px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    
+  }
+  
+  #tablaDeSegmentos td:nth-child(even),
+  #tablaDeMarcos td:nth-child(even),
+  #TablaDirecciones td:nth-child(even) {
+    border: 1px solid rgb(0, 0, 0); /* Borde para celdas pares */
+  }
+  
+  #tablaDeSegmentos td:nth-child(odd),
+  #tablaDeMarcos td:nth-child(odd),
+  #TablaDirecciones td:nth-child(odd) {
+    border: 1px solid rgb(0, 0, 0); /* Borde para celdas impares */
+  }
+  
+
+  .custom-combobox {
+    position: absolute;
+    left: 980px;
+    top: 450px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 18px;
+    text-align: center;
+  }
+
+  #botonVerificar {
+    position: absolute;
+    left: 1010px;
+    top: 420px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 18px;
+    text-align: center;
+  }
